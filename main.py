@@ -12,7 +12,7 @@ def convert():
     options.add_argument('headless')
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     browser = webdriver.Chrome(options=options)
-    browser.get('https://vm.tiktok.com/ZMdF6u9A4/')
+    browser.get(vid)
     url = browser.current_url
     browser.quit()
     cls()
@@ -32,4 +32,5 @@ elif vid.startswith("vm."):
     convert()
 else:
     botting()
+
 

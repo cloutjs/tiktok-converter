@@ -20,9 +20,9 @@ def convert():
     print(url)
     time.sleep(15)
 
-def botting():
+def success():
     cls()
-    print("Success")
+    print("Already a normal URL or not a URL at all.")
     time.sleep(15)
 
 vid = input("TikTok URL: ")
@@ -31,6 +31,6 @@ if vid.startswith("https://vm"):
 elif vid.startswith("vm."):
     convert()
 else:
-    botting()
+    success()
 
 

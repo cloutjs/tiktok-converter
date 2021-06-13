@@ -18,12 +18,12 @@ def convert():
     cls()
     print("New URL:\n")
     print(url)
-    time.sleep(5)
+    time.sleep(15)
 
 def botting():
     cls()
     print("Success")
-    time.sleep(5)
+    time.sleep(15)
 
 vid = input("TikTok URL: ")
 if vid.startswith("https://vm"):

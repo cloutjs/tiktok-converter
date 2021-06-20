@@ -16,14 +16,15 @@ def convert():
     url = browser.current_url
     browser.quit()
     cls()
+    e = url.split(".html")
     print("New URL:\n")
-    print(url)
-    time.sleep(15)
+    print(e[0])
+    time.sleep(5)
 
-def success():
+def botting():
     cls()
-    print("Already a normal URL or not a URL at all.")
-    time.sleep(15)
+    print("Success")
+    time.sleep(5)
 
 vid = input("TikTok URL: ")
 if vid.startswith("https://vm"):
@@ -31,6 +32,8 @@ if vid.startswith("https://vm"):
 elif vid.startswith("vm."):
     convert()
 else:
-    success()
+    botting()
+
+
 
 
